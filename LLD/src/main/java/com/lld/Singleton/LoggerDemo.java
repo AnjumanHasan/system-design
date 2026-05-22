@@ -1,4 +1,6 @@
-package DesignPatterns.Singleton;
+package com.lld.Singleton;
+
+import com.lld.Singleton.SingletonLogger;
 
 /**
  * Demonstrates the three core Singleton properties:
@@ -24,7 +26,7 @@ public class LoggerDemo {
 
         // ── Test 3: Level change is shared across all references ───────────────
         System.out.println("\n=== Change level to DEBUG via logger2 ===");
-        logger2.setLogLevel(SingletonLogger.LogLevel.DEBUG);
+        logger2.setLogLevel(SingletonLogger.Level.DEBUG);
         logger1.debug("Now visible - level changed through a different variable");
         logger1.info("Still visible");
 
